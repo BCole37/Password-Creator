@@ -110,18 +110,18 @@ function writePassword() {
   
   var truePassword = password.join("");
 
-
+ // returns the password value
   return truePassword;
   }
 
-
+// runs the password creation function
   var password = generatePassword()
   var passwordText = document.querySelector("#password");
 
-
+ 
   passwordText.value = password;
   console.log(password.value)
 }
 
-// Add event listener to generate button
+// Add event listener to generate button and shows the password
 generateBtn.addEventListener("click", writePassword);
